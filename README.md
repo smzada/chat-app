@@ -7,9 +7,12 @@ simply go to the following url: https://chat-app-azure-pi.vercel.app
 button, or press the enter key while the input message box is still selected, in order to publish their message (a selected text box will be denoted by a blue border)
 
 ~ users have the ability to reply to existing messages in the chat by selecting the message they want to reply to (blue border will depict a selected message), and then sending their desired message
+
 ~ this will then spawn a threaded view of the messages as the latest content in the 
 chat log
+
 ~ the user message will display their name, message content, and timestamp
+
 ~ to deselect a message from the chat log that is currently in the selected state, either click the message again or click another message in the log
 
 Assumptions
