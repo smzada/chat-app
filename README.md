@@ -1,70 +1,30 @@
-# Getting Started with Create React App
+~ This project is a simple chat messaging interface currently being hosted on vercel
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+~ to run the application,
+simply go to the following url: https://chat-app-azure-pi.vercel.app
 
-## Available Scripts
+~ next, a user should enter their name and message, then either click the send 
+button, or press the enter key while the input message box is still selected, in order to publish their message (a selected text box will be denoted by a blue border)
 
-In the project directory, you can run:
+~ users have the ability to reply to existing messages in the chat by selecting the message they want to reply to (blue border will depict a selected message), and then sending their desired message
+~ this will then spawn a threaded view of the messages as the latest content in the 
+chat log
+~ the user message will display their name, message content, and timestamp
+~ to deselect a message from the chat log that is currently in the selected state, either click the message again or click another message in the log
 
-### `npm start`
+Assumptions
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    ~ users will be utilizing the app on a desktop
+    ~ users will enter text in both the name input field and the message input field before pressing send / enter, otherwise the message will not publish
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Rationale
 
-### `npm test`
+    ~ React was chosen due to its fast performance, seamless configuration, and effective management of components and effects through the use of hooks 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Unimplemented Features
 
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    ~ user authentication for secure access to the chat interface
+    ~ message search functionality to find specific messages in the log
+    ~ enabling users to edit or delete their sent messages
+    ~ optimization for mobile
+    
